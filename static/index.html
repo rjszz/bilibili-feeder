@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilibili 投喂站</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>bilibili 投喂站</h1>
+            <p class="subtitle">极简音视频解析工具</p>
+            
+            <div class="input-group">
+                <input type="text" id="urlInput" placeholder="粘贴 Bilibili 视频链接 (BV号/链接)..." autocomplete="off">
+            </div>
+
+            <div class="button-group">
+                <button id="btnVideo">
+                    <span class="icon">📺</span> 解析视频
+                </button>
+                <button id="btnAudio">
+                    <span class="icon">🎵</span> 解析音频
+                </button>
+            </div>
+            
+            <div id="status" class="status-text"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
