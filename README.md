@@ -33,3 +33,20 @@ sudo apt install ffmpeg python3 -y
 # 安装最新版 yt-dlp (推荐方式)
 sudo curl -L [https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
+```
+### 2. CentOS / RHEL 系统
+CentOS 默认源不包含 FFmpeg，需先安装 EPEL 和 RPM Fusion 源。
+```bash
+# 安装 EPEL 源
+sudo yum install epel-release -y
+
+# 安装 RPM Fusion (根据你的 CentOS 版本，以下以 CentOS 7/8 为例)
+sudo yum install -y [https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm](https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-$(rpm) -E %rhel).noarch.rpm
+
+# 安装 FFmpeg 和 Python3
+sudo yum install ffmpeg python3 -y
+
+# 安装 yt-dlp
+sudo curl -L [https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp) -o /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+```
